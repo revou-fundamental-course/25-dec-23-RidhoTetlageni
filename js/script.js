@@ -6,7 +6,7 @@ document.getElementById("calculateArea").addEventListener("click", function () {
 
   if (base > 0 && height > 0) {
     const area = 0.5 * base * height;
-    resultArea.innerHTML = `<p>Luas: ${area.toFixed(2)}</p>`;
+    resultArea.innerHTML = `<p> Hasil Luas Segitiga: ${area.toFixed(0)}</p>`;
   } else {
     resultArea.innerHTML =
       "<p>Masukkan nilai yang valid untuk alas dan tinggi.</p>";
@@ -31,7 +31,7 @@ document
       sideB + sideC > sideA
     ) {
       const perimeter = sideA + sideB + sideC;
-      resultPerimeter.innerHTML = `<p>Keliling: ${perimeter.toFixed(2)}</p>`;
+      resultPerimeter.innerHTML = `<p> Hasil Keliling Segitiga: ${perimeter.toFixed(0)}</p>`;
     } else {
       resultPerimeter.innerHTML =
         "<p>Masukkan nilai yang valid untuk panjang sisi segitiga.</p>";
