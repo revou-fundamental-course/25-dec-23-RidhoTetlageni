@@ -2,34 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Matematik Segitiga</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Kalkulator Segitiga</h1>
-      <form id="triangleFormArea">
-        <h2>Luas Segitiga</h2>
-        <label for="base">Alas:</label>
-        <input type="number" id="base" required />
-        <label for="height">Tinggi:</label>
-        <input type="number" id="height" required />
-        <button type="submit">Hitung Luas</button>
-        <div id="resultArea"></div>
-      </form>
-      <form id="triangleFormPerimeter">
-        <h2>Keliling Segitiga</h2>
-        <label for="sideA">Sisi A:</label>
-        <input type="number" id="sideA" required />
-        <label for="sideB">Sisi B:</label>
-        <input type="number" id="sideB" required />
-        <label for="sideC">Sisi C:</label>
-        <input type="number" id="sideC" required />
-        <button type="submit">Hitung Keliling</button>
-        <div id="resultPerimeter"></div>
-      </form>
+      <div class="header"><h1>Kalkulator Segitiga</h1></div>
+      <div class="calculator">
+        <div class="form-area">
+          <h2>Luas Segitiga</h2>
+          <p>
+            <img src="asset/segitiga.jpg" alt="Luas Segitiga" class="image" />
+          </p>
+          <p class="text-left">Rumus Luas Segitiga yaitu :</p>
+          <p><strong>L = 1/2 x a x t</strong></p>
+          <p class="text-left">
+            Di mana :<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi
+          </p>
+          <hr />
+          <div class="input-fields">
+            <label for="base">Alas:</label>
+            <input type="number" id="base" required />
+            <label for="height">Tinggi:</label>
+            <input type="number" id="height" required />
+          </div>
+          <button id="calculateArea">Hitung Luas</button>
+          <div id="resultArea" class="result"></div>
+        </div>
+        <div class="form-perimeter">
+          <h2>Keliling Segitiga</h2>
+          <p>
+            <img
+              src="asset/segitiga.jpg"
+              alt="Keliling Segitiga"
+              class="image"
+            />
+          </p>
+          <p class="text-left">Rumus Keliling Segitiga yaitu :</p>
+          <p><strong>K = S1 + S2 + S3</strong></p>
+          <p class="text-left">
+            Di mana :<br />K = Keliling<br />S1 = Sisi A<br />S2 = Sisi B<br />S3
+            = Sisi C
+          </p>
+          <hr />
+          <div class="input-fields">
+            <label for="sideA">Sisi A:</label>
+            <input type="number" id="sideA" required />
+            <label for="sideB">Sisi B:</label>
+            <input type="number" id="sideB" required />
+            <label for="sideC">Sisi C:</label>
+            <input type="number" id="sideC" required />
+          </div>
+          <button id="calculatePerimeter">Hitung Keliling</button>
+          <div id="resultPerimeter" class="result"></div>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="footer"><p>&copy; Muhamad Ridho Tetlageni 2024</p></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
