@@ -12,7 +12,7 @@ document.getElementById("calculateArea").addEventListener("click", function () {
       "<p>Masukkan nilai yang valid untuk alas dan tinggi.</p>";
   }
 });
-
+ 
 document
   .getElementById("calculatePerimeter")
   .addEventListener("click", function () {
@@ -22,14 +22,7 @@ document
 
     const resultPerimeter = document.getElementById("resultPerimeter");
 
-    if (
-      sideA > 0 &&
-      sideB > 0 &&
-      sideC > 0 &&
-      sideA + sideB > sideC &&
-      sideA + sideC > sideB &&
-      sideB + sideC > sideA
-    ) {
+    if ( sideA + sideB + sideC) {
       const perimeter = sideA + sideB + sideC;
       resultPerimeter.innerHTML = `<p> Hasil Keliling Segitiga: ${perimeter.toFixed(0)}</p>`;
     } else {
